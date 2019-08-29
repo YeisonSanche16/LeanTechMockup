@@ -1,0 +1,1 @@
+export const SHOW_HIDE_MENU = 'SHOW_HIDE_MENU'

@@ -1,1 +1,9 @@
 @import 'node_modules/reset-css/sass/_reset';
+@import './shared/utils';
+@import './shared/variables';
+
+body {
+  @include respond-to(wide-screens) {
+    background-color: rgb(228, 225, 225);
+  }
+}

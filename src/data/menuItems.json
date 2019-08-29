@@ -1,74 +1,75 @@
 {
-  "logo": {
-    "link": "let´s get started the challenge"
-  },
-
-  "imagenav": {
-    "link": "https://maplesymargaritas.com/media/catalog/product/cache/21/small_image/295x/040ec09b1e35df139433887a97daa66f/6/j/6j8d9778.jpg"
-  },
-
   "links": [
     {
-      "label": "Funeral",
-      "href": "#"
+      "name": "Home",
+      "nameClassIcon": "fas fa-home",
+      "id": "1"
     },
     {
-      "label": "Love and Romance",
-      "links": [
+      "name": "Messages",
+      "nameClassIcon": "far fa-envelope",
+      "id": "2",
+      "sublinks": [
         {
-          "label": "dos uno",
-          "href": "#"
+          "name": "Messages1",
+          "id": "1"
         },
         {
-          "label": "dosdos",
-          "href": "#"
+          "name": "Messages2",
+          "id": "2"
         }
       ]
     },
     {
-      "label": "Anniversary",
-      "links": [
+      "name": "Wishlist",
+      "id": "3",
+      "nameClassIcon": "fas fa-star",
+      "sublinks": [
         {
-          "label": "tresuno",
-          "href": "#"
+          "name": "Wishlist1",
+          "id": "1"
         },
         {
-          "label": "tresdos",
-          "href": "#"
+          "name": "Wishlist2",
+          "id": "2"
         },
         {
-          "label": "trestres",
-          "href": "#"
+          "name": "Wishlist3",
+          "id": "3"
         }
       ]
     },
     {
-      "label": "Mothers",
-      "links": [
+      "name": "Settings",
+      "id": "4",
+      "nameClassIcon": "fas fa-cog",
+      "sublinks": [
         {
-          "label": "cuatrouno",
-          "href": "#"
+          "name": "Settings1",
+          "id": "1"
         },
         {
-          "label": "cuatrodos",
-          "href": "#"
+          "name": "Settings2",
+          "id": "2"
         },
         {
-          "label": "cuatrotres",
-          "href": "#"
+          "name": "Settings3",
+          "id": "3"
         },
         {
-          "label": "cuatrocuatro",
-          "href": "#"
+          "name": "Settings4",
+          "id": "4"
         }
       ]
     },
     {
-      "label": "Birthday",
-      "links": [
+      "name": "My Account",
+      "id": "5",
+      "nameClassIcon": "fas fa-user",
+      "sublinks": [
         {
-          "label": "sisas",
-          "href": "#"
+          "name": "My Account1",
+          "id": "1"
         }
       ]
     }
