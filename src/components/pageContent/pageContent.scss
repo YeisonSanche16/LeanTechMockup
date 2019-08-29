@@ -1,0 +1,46 @@
+@import './../../shared/variables';
+@import './../../shared/utils';
+
+.content-main {
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  @include respond-to(medium-screens) {
+    top: 75px;
+  }
+  @include respond-to(wide-screens) {
+    top: 141px;
+  }
+
+  &__container-application-main {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    transform: translate(0);
+    transition: transform $animation-timing $motion-curve;
+    @include respond-to(wide-screens) {
+      background-color: transparent;
+    }
+  }
+
+  .menu-opened &__container-application-main {
+    transform: translate(100vw);
+    @include respond-to(wide-screens) {
+      transform: translate(0);
+    }
+  }
+
+  &.hide-content-page {
+    display: none;
+    @include respond-to(medium-screens) {
+      display: none;
+    }
+    @include respond-to(wide-screens) {
+      display: block;
+    }
+  }
+}
