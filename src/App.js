@@ -6,16 +6,17 @@ import Menu from './components/menu/Menu.js'
 export default class App extends Component {
   constructor (props) {
     super(props)
-    this.dataHeader = props.dataHeader
-    this.dataMenu = props.dataMenu
+    this.linkLogo = this.props.linkLogo
+    this.dataMenu = this.props.dataMenu
+    this.dataPageContent = this.props.dataPageContent
   }
 
   render () {
     return (
       <React.Fragment key='key'>
-        <Header dataHeader={this.dataHeader} />
+        <Header />
         <Menu dataMenu={this.dataMenu} />
-        <PageContent />
+        <PageContent dataPageContent={this.dataPageContent} linkLogo={this.linkLogo} />
       </React.Fragment>
     )
   }

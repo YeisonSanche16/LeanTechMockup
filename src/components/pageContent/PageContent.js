@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Filters from '../filters/Filters.js'
 import { connect } from 'react-redux'
 import './PageContent.scss'
 
@@ -6,6 +7,8 @@ class PageContent extends Component {
   constructor (props) {
     super(props)
     this.props = this.props
+    this.filterItems = this.props.dataPageContent.filterItems
+    this.linkLogo = this.props.linkLogo
     this.flag = false
   }
 
@@ -25,11 +28,13 @@ class PageContent extends Component {
   }
 
   render () {
-    var contentPage = document.querySelector('.content-main')
+    var contentPage = document.querySelector('.content')
     this.showOrHiddenContentPage(contentPage)
     return (
-      <main className='content-main'>
-        <div className='content-main__container-application-main' />
+      <main className='content'>
+        <div className='content__container-application-main'>
+          <Filters filterItems={this.filterItems} linkLogo={this.linkLogo} />
+        </div>
       </main>
     )
   }
