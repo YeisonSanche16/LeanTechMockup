@@ -1,0 +1,17 @@
+{
+  "filterItems": [
+    {
+      "nameClassIcon": "far fa-star",
+      "id": "1"
+    },
+    {
+      "nameClassIcon": "far fa-calendar-alt",
+      "id": "2"
+    },
+    {
+      "name": "Wishlist",
+      "nameClassIcon": "far fa-heart",
+      "id": "3"
+    }
+  ]
+}

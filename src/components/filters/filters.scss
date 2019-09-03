@@ -1,0 +1,173 @@
+@import './../../shared/variables';
+@import './../../shared/utils';
+
+.content {
+  &__filters {
+    @include respond-to(wide-screens) {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+  &__filters-section {
+    display: flex;
+    flex-flow: column wrap;
+    @include respond-to(wide-screens) {
+      width: 100%;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond-to(wide-screens) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    & .content__logo-link {
+      width: 80px;
+      height: 80px;
+      @include respond-to(wide-screens) {
+        width: 170px;
+        height: 100px;
+      }
+    }
+
+    & .content__logo-image {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      @include respond-to(wide-screens) {
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__smart-filter-container {
+    display: flex;
+    flex-flow: column wrap;
+    @include respond-to(wide-screens) {
+      width: 100%;
+    }
+
+    & .content__smart-filter-title {
+      display: flex;
+      justify-content: center;
+      font-size: $main-font-size;
+      border-bottom: 1px solid #2c3b45;
+      padding: 5px;
+      @include respond-to(wide-screens) {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+      }
+    }
+
+    & .content__smart-filter-wrapper {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      border-bottom: 1px solid #2c3b45;
+      @include respond-to(wide-screens) {
+        width: 100%;
+        padding: 0;
+        flex-flow: column wrap;
+        padding-top: 20px;
+      }
+    }
+
+    & .content__smart-filter-wrapper > .content__smart-filter-item {
+      position: relative;
+      padding: 30px;
+      @include respond-to(wide-screens) {
+        padding: 0;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &.fa-star::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 25px;
+        @include respond-to(wide-screens) {
+          left: 80px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      &.fa-calendar-alt::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 25px;
+        @include respond-to(wide-screens) {
+          left: 80px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      &.fa-heart::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 25px;
+        @include respond-to(wide-screens) {
+          left: 80px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+  }
+
+  &__status-filter {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      font-size: $main-font-size;
+      padding: 5px;
+    }
+
+    &-form {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    &-input[type='text'] {
+      height: 30px;
+      width: 250px;
+      border: 2px solid black;
+      border-radius: 7px;
+      font-size: $main-font-size;
+    }
+
+    &-container-button {
+      display: flex;
+      justify-content: center;
+
+      & .content__status-filter-button {
+        height: 36px;
+        width: 258px;
+        border: 2px solid black;
+        border-radius: 7px;
+        font-size: $main-font-size;
+      }
+    }
+  }
+}

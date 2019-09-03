@@ -8,70 +8,22 @@
     {
       "name": "Messages",
       "nameClassIcon": "far fa-envelope",
-      "id": "2",
-      "sublinks": [
-        {
-          "name": "Messages1",
-          "id": "1"
-        },
-        {
-          "name": "Messages2",
-          "id": "2"
-        }
-      ]
+      "id": "2"
     },
     {
       "name": "Wishlist",
       "id": "3",
-      "nameClassIcon": "fas fa-star",
-      "sublinks": [
-        {
-          "name": "Wishlist1",
-          "id": "1"
-        },
-        {
-          "name": "Wishlist2",
-          "id": "2"
-        },
-        {
-          "name": "Wishlist3",
-          "id": "3"
-        }
-      ]
+      "nameClassIcon": "fas fa-star"
     },
     {
       "name": "Settings",
       "id": "4",
-      "nameClassIcon": "fas fa-cog",
-      "sublinks": [
-        {
-          "name": "Settings1",
-          "id": "1"
-        },
-        {
-          "name": "Settings2",
-          "id": "2"
-        },
-        {
-          "name": "Settings3",
-          "id": "3"
-        },
-        {
-          "name": "Settings4",
-          "id": "4"
-        }
-      ]
+      "nameClassIcon": "fas fa-cog"
     },
     {
       "name": "My Account",
       "id": "5",
-      "nameClassIcon": "fas fa-user",
-      "sublinks": [
-        {
-          "name": "My Account1",
-          "id": "1"
-        }
-      ]
+      "nameClassIcon": "fas fa-user"
     }
   ]
 }
